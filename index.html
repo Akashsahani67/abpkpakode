@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ABP K Pakode | Crispy Bites, Crazy Flavours, Desi Vibes</title>
+<meta name="description" content="ABP K Pakode: classic and crazy pakodas, chai and chutneys. Order on WhatsApp or plan your party and wedding snacks.">
+<meta property="og:title" content="ABP K Pakode"><meta property="og:description" content="Pakode jo har bite mein khushi de!"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="nav" id="nav"><a href="#home" class="logo" aria-label="ABP K Pakode home">👑 ABP K PAKODE</a>
+<button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav id="links"><a href="#home">Home</a><a href="#about">About Us</a><a href="#menu">Our Menu</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#events">Party &amp; Wedding Orders</a><a href="#contact">Contact</a><a href="#events" class="btn sm magnetic">Order for Events</a></nav></header>
+
+<main>
+<section id="home" class="hero dark"><div class="wrap hero-grid">
+<div><p class="tag">Crispy Bites • Crazy Flavours • Desi Vibes</p>
+<h1 class="split" aria-label="ABP K Pakode"><span>ABP</span> <span>K</span> <span>Pakode</span></h1>
+<p class="lead">Crispy Bites. Crazy Flavours. Full Desi Vibes.</p>
+<p class="rise">Familiar desi pakodas with a playful twist. <em>Pakode jo har bite mein khushi de!</em></p>
+<div class="cta rise"><a href="#menu" class="btn magnetic">Explore Our Menu</a><a href="#events" class="btn ghost magnetic">Plan Your Celebration</a></div></div>
+<div class="hero-img"><div class="steam"><i></i><i></i><i></i></div><img data-k="aloo" alt="Golden crispy pakodas with chutneys" class="parallax" fetchpriority="high"><span class="badge spin">Fresh &amp; Crispy</span><span class="love">Made with Desi Love</span></div></div>
+<a href="#about" class="scroll" aria-label="Scroll down">⌄</a></section>
+
+<section id="about" class="cream"><div class="wrap two">
+<div class="reveal"><h2 class="ul">A Little Crunch. A Lot of Happiness.</h2>
+<p>At ABP K Pakode, every bite brings together the comfort of desi flavours and a little unexpected magic. From timeless favourites to crazy food twists, we make snack time worth celebrating.</p>
+<p class="hindi">स्वाद का तड़का</p></div>
+<div class="mask reveal"><img data-k="counter" alt="Pakodas being fried and served" loading="lazy"></div></div>
+<div class="wrap cards4"><div class="card reveal"><b>🌿</b><h3>Fresh ingredients</h3><p>Made fresh, every order.</p></div><div class="card reveal"><b>🧼</b><h3>Hygienic preparation</h3><p>Clean kitchen, careful hands.</p></div><div class="card reveal"><b>😋</b><h3>Great taste</h3><p>Desi masala in every bite.</p></div><div class="card reveal"><b>💛</b><h3>Everyday affordable</h3><p>Snack time for everyone.</p></div></div></section>
+
+<section id="menu" class="ivory"><div class="wrap"><h2 class="ul reveal">Our Menu</h2>
+<div class="tabs" id="tabs" role="tablist"></div><div class="grid" id="menuGrid"></div></div></section>
+
+<section id="signature" class="dark"><div class="wrap"><h2 class="ul yellow reveal">Not Your Ordinary Pakoda.</h2><p class="lead reveal">Classic crunch meets crazy creativity. Come hungry, leave smiling.</p><div class="sig" id="sig"></div></div></section>
+
+<section id="gallery" class="cream"><div class="wrap"><h2 class="ul reveal">Food Gallery</h2><div class="masonry" id="gal"></div></div></section>
+
+<section id="reviews" class="ivory"><div class="wrap"><h2 class="ul reveal">Good Food. Happy People.</h2>
+<p class="note">Sample testimonials for demonstration only. Replace with genuine customer reviews.</p>
+<div class="car-ctl"><button id="prev" aria-label="Previous reviews">‹</button><button id="next" aria-label="Next reviews">›</button></div>
+<div class="car" id="car"></div>
+<a class="btn ghost" id="reviewLink" href="#reviews">Share Your Experience</a></div></section>
+
+<section id="events" class="dark"><div class="wrap"><h2 class="ul yellow reveal">Your Celebration Deserves a Little Extra Crunch.</h2>
+<p class="lead reveal">From intimate get-togethers to grand wedding celebrations, make your event memorable with delicious pakodas and desi snacks.</p>
+<div class="chips" id="chips"></div>
+<form id="evForm" class="form" novalidate>
+<label>Full Name<input name="name" required autocomplete="name"><small></small></label>
+<label>Phone Number<input name="phone" type="tel" required inputmode="tel" placeholder="98765 43210" autocomplete="tel"><small></small></label>
+<label>Email Address (optional)<input name="email" type="email" autocomplete="email"><small></small></label>
+<label>Event Type<select name="type" required><option value="">Select</option></select><small></small></label>
+<label>Event Date<input name="date" type="date" required><small></small></label>
+<label>Approximate Number of Guests<input name="guests" type="number" min="1" required><small></small></label>
+<label>Event Location<input name="location" required><small></small></label>
+<label>Preferred Food Items<input name="items" placeholder="e.g. Onion Pakoda, Masala Chai"></label>
+<label class="full">Additional Requirements<textarea name="notes" rows="3" placeholder="Dietary preferences, custom needs, timing"></textarea></label>
+<div class="full cta"><button class="btn magnetic" id="submitBtn" type="submit">Request Event Menu</button><button class="btn ghost magnetic" type="button" id="evWa">Enquire on WhatsApp</button></div>
+<p class="full ok" id="evOk" role="status" hidden></p></form></div></section>
+
+<section id="order" class="cream"><div class="wrap"><h2 class="ul reveal">Craving Some Crunch?</h2>
+<div class="cta"><a class="btn magnetic" href="#order" id="orderTop">Order on WhatsApp</a><a class="btn ghost magnetic" href="#menu">Explore the Menu</a></div>
+<div class="order"><div id="pick" class="pick"></div><aside class="summary"><h3>Your order</h3><ul id="sum"><li class="empty">Pick items to start.</li></ul>
+<div class="seg"><label><input type="radio" name="mode" value="Pickup" checked> Pickup</label><label><input type="radio" name="mode" value="Delivery"> Delivery</label></div>
+<textarea id="instr" rows="2" placeholder="Special instructions"></textarea>
+<button class="btn magnetic" id="orderWa">Continue to WhatsApp</button><small>Availability and confirmation are handled by the restaurant on WhatsApp.</small></aside></div></div></section>
+
+<section id="contact" class="dark"><div class="wrap"><div class="contact"><h2 class="ul yellow">Find Us</h2>
+<p><b>ABP K Pakode</b></p><p id="cAddr"></p><p id="cPhone"></p><p id="cMail"></p><p id="cHours"></p>
+<p><a id="cIg" href="#contact">Instagram</a></p><a class="btn magnetic" id="cWa" href="#contact">Chat on WhatsApp</a></div>
+<div class="map">Map embed placeholder: paste your Google Maps iframe here</div></div></section>
+</main>
+
+<footer class="foot dark"><div class="wrap"><div><b class="logo">👑 ABP K PAKODE</b><p>Crispy Bites • Crazy Flavours • Desi Vibes</p><p class="big">Eat. Repeat. Celebrate.</p></div>
+<div><h4>Explore</h4><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#events">Events</a></div>
+<div><h4>Menu</h4><span id="fCats"></span></div>
+<div><h4>Follow</h4><a href="#contact" aria-label="Instagram">Instagram</a><a href="#contact" aria-label="Facebook">Facebook</a></div></div>
+<p class="copy">© <span id="yr"></span> ABP K Pakode</p></footer>
+
+<a href="#order" class="wa" id="waFloat" aria-label="Order on WhatsApp">💬 Order</a>
+<button class="top" id="top" aria-label="Back to top"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" id="ring"/></svg>↑</button>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-label="Dish details"><div class="mbox"><button class="x" id="mx" aria-label="Close">×</button><img id="mi" alt=""><div><h3 id="mt"></h3><p id="md"></p><p id="ml" class="tagp"></p><button class="btn" id="madd">Add to my order</button></div></div></div>
+<div class="modal lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Gallery"><button class="x" id="lx" aria-label="Close">×</button><button class="ar l" id="lp" aria-label="Previous">‹</button><figure><img id="li" alt=""><figcaption id="lc"></figcaption></figure><button class="ar r" id="ln" aria-label="Next">›</button></div>
+<script src="script.js"></script></body></html>
